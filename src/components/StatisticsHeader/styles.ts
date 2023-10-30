@@ -1,15 +1,16 @@
 import styled from "styled-components/native";
-import { Feather } from "@expo/vector-icons";
 
-interface PercentageCardStyleProps {
+import Feather from '@expo/vector-icons/Feather'
+
+type ContainerProps = {
   isHealthy: boolean
 }
 
-export const Container = styled.TouchableOpacity<PercentageCardStyleProps>`
-  padding: 20px 16px;
-  align-items: center;
-  border-radius: 8px;
-  gap: 2px;
+export const Container = styled.View<ContainerProps>`
+  padding-top: 60px;
+  padding-bottom: 44px;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: ${(props) => props.isHealthy ? props.theme.COLORS.GREEN_LIGHT : props.theme.COLORS.RED_LIGHT};
   position: relative;
 `
@@ -22,7 +23,9 @@ export const Icon = styled(Feather).attrs((props) => ({
   size: 24,
 }))<IconStyleProps>`
   color: ${(props) => props.isHealthy ? props.theme.COLORS.GREEN_DARK : props.theme.COLORS.RED_DARK};
-  position: absolute;
-  top: 8px;
-  right: 8px;
+`
+
+export const StatsContainer = styled.View`
+  align-items: center;
+  margin-top: -12px;
 `
