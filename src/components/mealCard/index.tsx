@@ -1,4 +1,4 @@
-import { BodyText } from "@components/Body";
+import { BodyText } from "@components/BodyText";
 import {
   Container,
   DietIndicator,

@@ -1,7 +1,7 @@
 import { StatisticsHeader } from '@components/StatisticsHeader'
 import { Card, CardsColumnContainer, CardsContainer, Container } from './styles'
 import { Title } from '@components/Title'
-import { BodyText } from '@components/Body'
+import { BodyText } from '@components/BodyText'
 
 export function Statistics() {
   return (

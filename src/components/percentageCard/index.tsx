@@ -3,7 +3,7 @@ import { TouchableOpacityProps } from 'react-native'
 import { Container, Icon } from "./styles";
 
 import { Title } from "@components/Title";
-import { BodyText } from "@components/Body";
+import { BodyText } from "@components/BodyText";
 
 type Props = TouchableOpacityProps & {}
 

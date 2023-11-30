@@ -5,9 +5,6 @@ import {
   Header,
   Meals,
   NewMealsContainer,
-  NewMealButton,
-  NewMealButtonTitle,
-  NewMealButtonIcon,
   ScrollContainer,
 } from "./styles";
 
@@ -18,8 +15,9 @@ import { PercentageCard } from "@components/percentageCard";
 import { SectionList, Text, View } from "react-native";
 import { MealCard } from "@components/mealCard";
 import { Title } from "@components/Title";
-import { BodyText } from "@components/Body";
+import { BodyText } from "@components/BodyText";
 import { HomeGroupNavigation } from '@routes/app.stack.routes';
+import { Button } from '@components/Button';
 
 const mealsData = [
   {
@@ -108,10 +106,7 @@ export function Home() {
         <Meals>
           <NewMealsContainer>
             <BodyText text="Refeições" size="M" style={{marginBottom: 8}} />
-            <NewMealButton onPress={handleOpenNewMeal}>
-              <NewMealButtonIcon name="plus" size={24} />
-              <NewMealButtonTitle>Nova refeição</NewMealButtonTitle>
-            </NewMealButton>
+            <Button title='Nova refeição' icon={'plus'} onPress={handleOpenNewMeal} />
           </NewMealsContainer>
 
           <SectionList

@@ -3,7 +3,7 @@ import { TouchableOpacity } from 'react-native'
 
 import { Title } from '@components/Title'
 import { Icon, Container, StatsContainer } from './styles'
-import { BodyText } from '@components/Body'
+import { BodyText } from '@components/BodyText'
 
 interface StatiscticsHeaderProps {
   percentage: string

@@ -8,3 +8,13 @@ export const Container = styled.View`
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 `
+
+export const InputsContainer = styled.View`
+  flex: 1;
+  gap: 24px;
+`
+
+export const InputsColumnContainer = styled.View`
+  gap: 20px;
+  flex-direction: row;
+`
